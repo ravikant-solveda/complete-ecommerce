@@ -2,6 +2,7 @@ import HeroBanner from "@/components/HeroBanner";
 import Wrapper from "@/components/Wrapper";
 import ProductCard from "@/components/ProductCard";
 export default function Home() {
+  console.log("hello my name is ravi kant chauhan");
   return (
     <main>
       <HeroBanner />

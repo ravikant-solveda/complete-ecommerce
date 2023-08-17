@@ -1,7 +1,8 @@
 import ProductDetailsCarousel from '@/components/ProductDetailsCarousel'
 import Wrapper from '@/components/Wrapper'
 import React from 'react'
-
+import { IoMdHeartEmpty } from 'react-icons/io'
+import RelatedProduct from '@/components/RelatedProduct'
 const ProductDetails = () => {
   return (
     <div className='w-full md:py-20'>
@@ -98,11 +99,26 @@ const ProductDetails = () => {
                 {/* WISHLIST BUTTON START */}
                  <button className='w-full py-4 rounded-full border border-black text-lg font-medium transition-transform active:scale-95 flex items-center justify-center gap-2 hover:opacity-75 mb-10 '>
                     Wishlist
+                    <IoMdHeartEmpty size={20}/>
                  </button>
                  {/* WHISHLIST BUTTON END */}
+
+                 <div>
+                    <div className='text-lg font-bold mb-5'>
+                        Product Details
+                    </div>
+                    <div className='text-md mb-5'>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.
+                    </div>
+                    <div className='text-md mb-5'>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.
+                    </div>
+                 </div>
             </div>
-              {/* left column end */}
+              {/* right column end */}
             </div>
+
+            <RelatedProduct/>
         </Wrapper>
     </div>
   )
